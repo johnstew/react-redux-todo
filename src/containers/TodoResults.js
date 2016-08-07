@@ -16,7 +16,7 @@ const TodoResults = (props) => {
               return <ListItem
                 primaryText={t.task}
                 key={i}
-                rightIcon={<Checkbox onClick={() => completeTodo(i)} />}
+                onClick={() => completeTodo(i)}
               />
             }
           })

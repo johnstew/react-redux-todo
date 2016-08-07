@@ -2,7 +2,7 @@
 import {
   ADD_TODO,
   COMPLETE_TODO
-} from '../actions/todo';
+} from '../core/actiontypes';
 
 const initState = {
   todos: [

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import myStore from './reducers';
+import rootReducer from './reducers';
 import App from './components/App';
 
 // Material UI stuff
@@ -15,7 +15,7 @@ injectTapEventPlugin();
 require('./styles/main.scss');
 
 let store = createStore(
-  myStore,
+  rootReducer,
   compose(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f

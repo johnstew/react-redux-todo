@@ -7,6 +7,7 @@ import TodoHeader from '../containers/TodoHeader';
 import Divider from 'material-ui/Divider';
 import TodoResults from '../containers/TodoResults';
 import AppBar from 'material-ui/AppBar';
+import Notifications from '../containers/Notifications';
 
 const Todo = () => {
   return (
@@ -22,6 +23,7 @@ const Todo = () => {
           <TodoResults />
         </Paper>
       </div>
+      <Notifications />
     </div>
   );
 };
